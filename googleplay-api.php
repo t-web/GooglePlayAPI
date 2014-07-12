@@ -10,7 +10,7 @@ class GooglePlayAPI {
 		$command = $this->command("search", array($str, $nbrResults, $page), true);
 		system($command);
 		
-		$csv = new Kiss/Csv/CSV($this->tmpFile, true, ";");
+		$csv = new Kiss\Csv\CSV($this->tmpFile, true, ";");
 
 		return $csv;
 	}
