@@ -1,5 +1,11 @@
 {
+	"name": "amdg2/googleplayapi",
+	"license": "GPL3-0+",
+	"type": "library",
 	"require": {
 		"amdg2/kiss": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {"\\": "./"}
 	}
 }
