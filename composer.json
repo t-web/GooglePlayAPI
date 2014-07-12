@@ -6,7 +6,8 @@
 		"amdg2/kiss": "dev-master"
 	},
 	"autoload": {
-		"psr-4": {"\\": "./"}
-	},
-	"minimum-stability": "dev"
+		"files": [
+			"googleplay-api.php"
+		]
+	}
 }
