@@ -1,0 +1,5 @@
+{
+	"require": {
+		"amdg2/kiss": "dev-master"
+	}
+}
