@@ -1,7 +1,5 @@
 <?php
 
-require_once __DIR__ . '/vendor/autoload.php';
-
 class GooglePlayAPI {
 
 	private $pythonAPILocation = "/opt/googleplay-api/";
