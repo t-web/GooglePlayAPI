@@ -15,19 +15,19 @@ class GooglePlayAPI {
 		return $csv;
 	}
 
-	public function download($appid, $versionCode = NULL, $resultFolder = __DIR__) {
-		$resultFolder .= "/packages/" . $appid;
+	public function download($folder, $appid, $versionCode = NULL, $resultFolder = __DIR__) {
+		$resultUrl .= $folder . $appid;
 		if($versionCode !== NULL)
-			$resultFolder .= "_".$versionCode.".apk";
+			$resultUrl .= "_".$versionCode.".apk";
 		else
-			$resultFolder .= ".apk";
+			$resultUrl .= ".apk";
 
-		if(!file_exists($resultFolder)) {
-			$command = $this->command("download", array($appid, $resultFolder));
+		if(!file_exists($resultUrl)) {
+			$command = $this->command("download", array($appid, $resultUrl));
 			system($command);
 		}
 
-		return $resultFolder;
+		return $resultUrl;
 	}
 	
 	public function command($command, $params, $redirectOutput = false) {
