@@ -49,7 +49,7 @@ class GooglePlayAPI {
 			
 		$command .= ".py ";		
 
-		return "python ". $this->pythonAPILocation . $command . $params . $redirect;
+		return "python ". $this->pythonAPILocation . $command . $params . $redirect . " 2> /dev/null";
 	}
 }
 
