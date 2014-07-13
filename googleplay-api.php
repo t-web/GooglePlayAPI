@@ -15,7 +15,7 @@ class GooglePlayAPI {
 		return $csv;
 	}
 
-	public function download($folder, $appid, $versionCode = NULL, $resultFolder = __DIR__) {
+	public function download($folder, $appid, $versionCode = NULL, $noOutput = true) {
 		$resultUrl = $folder . '/' . $appid;
 		if($versionCode !== NULL)
 			$resultUrl .= "_".$versionCode.".apk";
@@ -23,7 +23,7 @@ class GooglePlayAPI {
 			$resultUrl .= ".apk";
 
 		if(!file_exists($resultUrl)) {
-			$command = $this->command("download", array($appid, $resultUrl));
+			$command = $this->command("download", array($appid, $resultUrl), $noOutput);
 			system($command);
 		}
 
