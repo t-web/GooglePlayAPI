@@ -16,7 +16,7 @@ class GooglePlayAPI {
 	}
 
 	public function download($folder, $appid, $versionCode = NULL, $resultFolder = __DIR__) {
-		$resultUrl .= $folder . $appid;
+		$resultUrl = $folder . '/' . $appid;
 		if($versionCode !== NULL)
 			$resultUrl .= "_".$versionCode.".apk";
 		else
