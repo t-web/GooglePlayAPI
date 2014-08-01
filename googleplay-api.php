@@ -2,8 +2,13 @@
 
 class GooglePlayAPI {
 
-	private $pythonAPILocation = "/opt/googleplay-api/";
-	private $tmpFile = "tmpresults.csv";
+	private $pythonAPILocation;
+	private $tmpFile;
+
+  public function __construct($pythonAPILocation = "/opt/googleplay-api/", $tmpFile = "tmpresults.csv") {
+    $this->pythonAPILocation = $pythonAPILocation;
+    $this->tmpFile = $tmpFile;
+  }
 
 	public function search($str, $nbrResults = 20, $page = 0) {
 		$page *= $nbrResults;
