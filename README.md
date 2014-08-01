@@ -13,6 +13,8 @@ This is not an official API. I am not afiliated with Google in any way, and am n
 How to use it ?
 ===============
 
+More info here : (How To Use, wiki page)[https://github.com/AMDG2/GooglePlayAPI/wiki/How-to-use]
+
 To use the GooglePlayAPI you need to install the python [googleplay-api](https://github.com/egirault/googleplay-api) somewhere on your system.
 
 Then you need to change the python API location in the main file, by default it's searching for the API in `/opt/googleplay-api/`.
