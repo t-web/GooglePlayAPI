@@ -1,6 +1,11 @@
 GooglePlayAPI
 =============
 
+[![Latest Stable Version](https://poser.pugx.org/amdg2/googleplayapi/v/stable.svg)](https://packagist.org/packages/amdg2/googleplayapi)
+[![Total Downloads](https://poser.pugx.org/amdg2/googleplayapi/downloads.svg)](https://packagist.org/packages/amdg2/googleplayapi)
+[![Latest Unstable Version](https://poser.pugx.org/amdg2/googleplayapi/v/unstable.svg)](https://packagist.org/packages/amdg2/googleplayapi)
+[![License](https://poser.pugx.org/amdg2/googleplayapi/license.svg)](https://packagist.org/packages/amdg2/googleplayapi)
+
 Tiny (unofficial) GooglePlay API written in PHP
 
 This API is written in PHP and use the fantastic [googleplay-api](https://github.com/egirault/googleplay-api) (Python) written by @egirault, he made all the work, thanks !
